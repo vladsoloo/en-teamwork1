@@ -79,7 +79,7 @@ Cover(обложка)
     <video uk-cover></video>
 </div>
 
-![image](https://github.com/user-attachments/assets/f22eb5df-fb16-4b2b-8571-30e557381f34)
+https://yootheme.com/site/images/media/yootheme-pro.mp4
 
 
 
