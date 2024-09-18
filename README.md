@@ -238,13 +238,66 @@ Cover(обложка)
     <video uk-cover></video>
 </div>
 
-https://yootheme.com/site/images/media/yootheme-pro.mp4
-![image](https://github.com/user-attachments/assets/a3582e7b-c072-4b82-823b-7b7482cd7ee3)
-
+Предпросмотр:
 
 <div class="uk-cover-container uk-height-medium">
     <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
 </div>
 
 
+#Iframe (личная подсказка:  iFrame — элемент HTML, позволяющий встраивать на веб-страницу документы, видео и интерактивные медиафайлы и прочие части содержимого из других источников)
 
+чтобы добавить элемент обложки к iframe'у, нужно добавить атрибут "uk-cover" к iframe'у. После добавьте класс ".uk-cover-container" к элементу контейнера поверх iframe'а, чтобы закрепить контент.
+
+<div class="uk-cover-container">
+    <iframe src="" uk-cover></iframe>
+</div>
+
+предпросмотр: 
+
+
+<div class="uk-cover-container uk-height-medium">
+    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+</div>
+
+#Responsive height (Адаптивная высота) 
+
+Чтобы добавить адаптивное поведение к изображению на обложке, вам нужно создать невидимый элемент "canvas"(холст) и присвоить ему значения ширины и высоты в соответствии с соотношением сторон, которое вы хотите, чтобы имела охватываемая область. Таким образом, он адаптирует адаптивное поведение изображения.
+
+<div class="uk-cover-container">
+    <canvas width="" height=""></canvas>
+    <img src="" alt="" uk-cover>
+</div>
+
+предпросмотр:
+
+<div class="uk-cover-container">
+    <canvas width="400" height="200"></canvas>
+    <img src="images/dark.jpg" alt="" uk-cover>
+</div>
+
+
+#Viewport height (высота видового окна/экрана)
+
+Добавление атрибута "uk-height-viewport" Из height component (компонента высоты) увеличит высоту родительского элемента, чтобы заполнить весь видовой экран
+
+
+<div class="uk-cover-container" uk-height-viewport>
+    <img src="" alt="" uk-cover>
+</div>
+
+#Component options (Параметры компонентов)
+
+К атрибуту компонента можно применить любой из этих параметров. Разделяйте несколько параметров точкой с запятой
+
+Опции|описания|значения|по умолчанию
+
+automute|	Boolean(логический)|	true(правда)|	Пытается автоматизировать видео в iframe.
+
+widt |   Number(номер)	|      Ширина элемента.
+
+height|	Number(номер)	|	Высота элемента.
+
+#Javascript
+
+инициализация
