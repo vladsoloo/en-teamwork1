@@ -305,3 +305,229 @@ height|	Number(номер)	|	Высота элемента.
 #Javascript
 
 инициализация
+
+Иконки 
+ Размещайте масштабируемые векторные значки в любом месте вашего контента. 
+UIkit поставляется с собственной системой значков SVG и обширной библиотекой, которая включает в себя растущее количество элегантных контурных значков. Этот компонент внедряет SVG-файлы на сайт, чтобы они принимали цвет и могли быть стилизованы с помощью CSS. 
+  # Использование  
+Обязательно подключите скрипт библиотеки значков,более подробную информацию смотрите в инструкции по установке. 
+       <script src="uikit/dist/js/uikit-icons.min.js"></script> 
+Чтобы применить компонент,добавьте uk-icon отнести к <span> или <a> элемент.Чтобы отобразить фактический значок,вам нужно добавить icon: NAME параметр для атрибута.И вуаля,ты имеешь векторный значок, который наследует цвет, как и ваш текст. 
+    <span uk-icon="icon: check"></span> 
+ 
+    <a href="" uk-icon="icon: heart"></a> 
+Если icon единственная опция в значении атрибута, вы также можете использовать uk-icon="NAME"  
+    <span uk-icon="heart"></span> 
+<span class="uk-margin-small-right" uk-icon="check"></span> 
+ 
+<a href="" uk-icon="heart"></a> 
+  # Библиотека  
+Вот обзор всех доступных на данный момент значков. Со временем мы будем добавлять в список новые значки. 
+ Приложения 
+ home 
+ sign-out 
+ user 
+ users 
+ lock 
+ unlock 
+ settings 
+ cog 
+ nut 
+ comment 
+ commenting 
+ comments 
+ hashtag 
+ tag 
+ cart 
+ bag 
+ credit-card 
+ mail 
+ receiver 
+ print 
+ search 
+ location 
+ bookmark 
+ code 
+ paint-bucket 
+ camera 
+ video-camera 
+ bell 
+ microphone 
+ bolt 
+ star 
+ heart 
+ happy 
+ lifesaver 
+ rss 
+ social 
+ git-branch 
+ git-fork 
+ world 
+ calendar 
+ clock 
+ history 
+ future 
+ crosshairs 
+ pencil 
+ trash 
+ move 
+ link 
+ link-external 
+ eye 
+ eye-slash 
+ question 
+ info 
+ warning 
+ image 
+ thumbnails 
+ table 
+ list 
+ menu 
+ grid 
+ more 
+ more-vertical 
+ plus 
+ plus-circle 
+ minus 
+ minus-circle 
+ close 
+ check 
+ ban 
+ refresh 
+ play 
+ play-circle 
+  Устройства 
+ tv 
+ desktop 
+ laptop 
+ tablet 
+ phone 
+ tablet-landscape 
+ phone-landscape 
+   Хранилище 
+ file 
+ file-text 
+ file-pdf 
+ copy 
+ file-edit 
+ folder 
+ album 
+ push 
+ pull 
+ server 
+ database 
+ cloud-upload 
+ cloud-download 
+ download 
+ upload 
+  Направление 
+ reply 
+ forward 
+ expand 
+ shrink 
+ arrow-up-right 
+ arrow-up 
+ arrow-down 
+ arrow-left 
+ arrow-right 
+ chevron-up 
+ chevron-down 
+ chevron-left 
+ chevron-right 
+ chevron-double-left 
+ chevron-double-right 
+ triangle-up 
+ triangle-down 
+ triangle-left 
+ triangle-right 
+   Редактор  
+bold 
+ italic 
+ strikethrough 
+ quote-right 
+   Бренды 
+ 500px 
+ android 
+ android-robot 
+ apple 
+ behance 
+ bluesky 
+ discord 
+ dribbble 
+ etsy 
+ facebook 
+ flickr 
+ foursquare 
+ github 
+ github-alt 
+ gitter 
+ google 
+ instagram 
+ joomla 
+ linkedin 
+ mastodon 
+ microsoft 
+ pinterest 
+ reddit 
+ signal 
+ soundcloud 
+ telegram 
+ threads 
+ tiktok 
+ tripadvisor 
+ tumblr 
+ twitch 
+ uikit 
+ vimeo 
+ whatsapp 
+ wordpress 
+ x 
+ xing 
+ yelp 
+ yootheme 
+ youtube 
+  # Соотношение 
+Добавьте ratio: 2 параметры для uk-icon атрибут, чтобы удвоить его размер — или любое другое число, в зависимости от того, насколько большим вы хотите, чтобы ваш значок был. 
+  <span uk-icon="icon: check; ratio: 2"></span> 
+  <span class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></span> 
+  <span uk-icon="icon: check; ratio: 3.5"></span> 
+  # Модификатор ссылки  
+Чтобы сбросить стиль ссылки по умолчанию на более приглушенный цвет при использовании значка внутри привязки, добавьте .uk-icon-link сорт. 
+ <a href="" class="uk-icon-link" uk-icon="heart"></a> 
+<div> 
+    <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="copy"></a> 
+    <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="file-edit"></a> 
+    <a href="#" class="uk-icon-link" uk-icon="trash"></a> 
+</div> 
+ # Модификатор биттона 
+Используйте модификатор .uk-icon-button класс на <a> элемент для создания кнопки со значком, который можно использовать для значков социальных сетей. 
+<a href="" class="uk-icon-button" uk-icon="instagram"></a> 
+<div> 
+    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a> 
+    <a
+
+    href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a> 
+    <a href="" class="uk-icon-button" uk-icon="youtube"></a> 
+</div> 
+ # Модификатор изображения  
+Вы также можете масштабировать любое фоновое изображение до размера значка. Просто добавьте .uk-icon-image класс и путь к фоновому изображению. 
+<span class="uk-icon uk-icon-image" style="background-image: url(images/dark.jpg);"></span> 
+ # Варианты компонентов  
+Любой из этих параметров можно применить к атрибуту компонента. Разделяйте несколько вариантов точкой с запятой. Узнать больше. 
+  Вариант Значение По умолчанию Описание 
+icon Строка  Значок для отображения 
+ratio Номер 1 Соотношение размеров значков. 
+icon это Primary  Опция и ее ключ могут быть опущены, если это единственная опция в значении атрибута. 
+<span uk-icon="heart"></span> 
+  # JavaScript 
+Узнайте больше о компонентах JavaScript. 
+   Инициализация 
+UIkit.icon(element, options); 
+   Характеристики 
+ svg 
+Обещание JavaScript, которое будет разрешено с добавлением узла SVG. 
+UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.stroke = 'red'; }) 
+  # Доступность  
+Установите соответствующие роли, состояния и свойства WAI-ARIA для компонента Icon. 
+Если <a> используется элемент,установите aria-label собственность в <a> элемент, описывающий его значение. 
+<a href="" uk-icon="icon: heart" aria-label="…"></a>
