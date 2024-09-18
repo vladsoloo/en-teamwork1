@@ -240,9 +240,13 @@ Cover(обложка)
 
 Предпросмотр:
 
+![image](https://github.com/user-attachments/assets/6a4b1fa1-0d07-412f-8f28-8bb24f242eb0)
+
+
 <div class="uk-cover-container uk-height-medium">
     <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
 </div>
+
 
 
 #Iframe (личная подсказка:  iFrame — элемент HTML, позволяющий встраивать на веб-страницу документы, видео и интерактивные медиафайлы и прочие части содержимого из других источников)
@@ -259,6 +263,7 @@ Cover(обложка)
 <div class="uk-cover-container uk-height-medium">
     <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="1920" height="1080" allowfullscreen uk-cover></iframe>
 </div>
+
 
 #Responsive height (Адаптивная высота) 
 
