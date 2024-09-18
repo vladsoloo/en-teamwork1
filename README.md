@@ -80,7 +80,12 @@ Cover(обложка)
 </div>
 
 https://yootheme.com/site/images/media/yootheme-pro.mp4
+![image](https://github.com/user-attachments/assets/a3582e7b-c072-4b82-823b-7b7482cd7ee3)
 
+
+<div class="uk-cover-container uk-height-medium">
+    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
+</div>
 
 
 
