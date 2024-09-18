@@ -273,7 +273,7 @@ Cover(обложка)
     <img src="" alt="" uk-cover>
 </div>
 
-предпросмотр:
+предпросмотр
 
 <div class="uk-cover-container">
     <canvas width="400" height="200"></canvas>
