@@ -531,3 +531,7 @@ UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.str
 Установите соответствующие роли, состояния и свойства WAI-ARIA для компонента Icon. 
 Если <a> используется элемент,установите aria-label собственность в <a> элемент, описывающий его значение. 
 <a href="" uk-icon="icon: heart" aria-label="…"></a>
+
+         редактировали: Владислав Соломахин и Филиппов Илья
+
+         
